@@ -17,11 +17,14 @@ Downloaded files are verified via SHA256 and cached locally.
    ```bash
    conda env create -f conda/environment.yml
    conda activate lamta_examples
+   ```
 
 2. Install this repository (to access lamta_examples.data_fetch):
    ```bash
     pip install -e .
+   ```
 
 3. Install LAMTA (core package):
    ```bash
     pip install git+https://github.com/OceanCruises/LAMTA.git
+    ```
