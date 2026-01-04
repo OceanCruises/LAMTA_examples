@@ -4,11 +4,13 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
-
-sphinx:
-  configuration: docs/conf.py
+  jobs:
+    post_install:
+      - jupyter-book build notebooks
 
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: notebooks/requirements.txt
     - path: .
+
+formats: []

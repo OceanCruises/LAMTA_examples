@@ -1,5 +1,8 @@
 title: LAMTA Examples
 author: OceanCruises / LAMTA
+
 execute:
   execute_notebooks: auto
 
+# optional but nice:
+only_build_toc_files: true

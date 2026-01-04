@@ -1,0 +1,16 @@
+jupyter-book>=1.0
+myst-parser
+myst-nb
+
+# your runtime deps for rendering notebooks (imports)
+pooch
+numpy
+scipy
+xarray
+netCDF4
+matplotlib
+cartopy
+cmocean
+
+# install LAMTA itself (if notebooks import it)
+git+https://github.com/OceanCruises/LAMTA.git
