@@ -1,9 +1,9 @@
 jupyter-book
 sphinx>=7,<8
+sphinx-rtd-theme
+nbsphinx
 myst-parser
 pooch
-nbsphinx
-ipykernel
 git+https://github.com/OceanCruises/LAMTA.git
 
 ipykernel
