@@ -1,10 +1,14 @@
 jupyter-book>=1.0
-myst-parser
 myst-nb
+
+sphinx>=7,<9
+myst-parser
+nbsphinx
+
 sphinx-book-theme
+sphinx-design
 sphinx-external-toc
 
-# your runtime deps for rendering notebooks (imports)
 pooch
 numpy
 scipy
@@ -14,5 +18,5 @@ matplotlib
 cartopy
 cmocean
 
-# install LAMTA itself
+# install LAMTA
 git+https://github.com/OceanCruises/LAMTA.git
