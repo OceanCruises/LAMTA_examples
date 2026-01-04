@@ -8,5 +8,4 @@ build:
 python:
   install:
     - requirements: docs/requirements.txt
-    - pip:
-        - git+https://github.com/OceanCruises/LAMTA.git
+    - path: .
