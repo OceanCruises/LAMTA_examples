@@ -11,9 +11,8 @@ extensions = [
 
 master_doc = "index"
 
-# Increase execution timeout (apply for both config keys)
-nb_execution_timeout = 300
-mystnb_execution_timeout = 300
+# Do not execute notebooks during docs build (render stored outputs)
+mystnb_execute = "off"
 
 source_suffix = [".md", ".rst", ".ipynb"]
 
