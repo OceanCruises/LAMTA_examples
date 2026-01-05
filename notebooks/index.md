@@ -76,14 +76,19 @@ If this fails, ensure that:
 
 ---
 
-### 4. Launch Jupyter
+### 4. Open the notebooks
 
-```bash
-jupyter lab
-```
+You can use **any Jupyter-compatible interface** (JupyterLab, classic Jupyter, VS Code, etc.).
 
-Open any notebook from the `notebooks/` directory and select the
-**lamta_examples** kernel if prompted.
+- Make sure the `lamta_examples` environment is activated
+- Open a notebook from the `notebooks/` directory
+- When prompted, select the **`lamta_examples` Python kernel**
+
+For example:
+- **VS Code**: open a notebook → select kernel in the top-right corner
+- **JupyterLab / Jupyter Notebook**: choose the kernel when opening the notebook
+
+As long as the correct environment/kernel is used, the examples will run identically!
 
 ---
 
