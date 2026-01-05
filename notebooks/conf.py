@@ -12,7 +12,12 @@ extensions = [
 master_doc = "index"
 
 # Do not execute notebooks during docs build (render stored outputs)
-mystnb_execute = "off"
+nb_execution_mode = "off"
+nb_execution_timeout = -1
+
+# (Optional compatibility: keep these too; harmless if unused)
+mystnb_execution_mode = "off"
+mystnb_execution_timeout = -1
 
 source_suffix = [".md", ".rst", ".ipynb"]
 
