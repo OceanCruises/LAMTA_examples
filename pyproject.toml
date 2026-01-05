@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lamta-examples"
+version = "0.1.0"
+description = "Example notebooks and reference datasets for LAMTA"
+requires-python = ">=3.10"
+
+dependencies = [
+  "pooch",
+]
+
+[tool.setuptools]
+packages = ["lamta_examples"]

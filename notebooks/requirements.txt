@@ -1,0 +1,22 @@
+jupyter-book>=1.0
+myst-nb
+
+sphinx>=7,<9
+myst-parser
+nbsphinx
+
+sphinx-book-theme
+sphinx-design
+sphinx-external-toc
+
+pooch
+numpy
+scipy
+xarray
+netCDF4<1.7.4
+matplotlib
+cartopy
+cmocean
+
+# install LAMTA
+git+https://github.com/OceanCruises/LAMTA.git

@@ -1,0 +1,15 @@
+name: lamta_examples
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - ipykernel
+  - numpy
+  - scipy
+  - xarray
+  - netcdf4
+  - matplotlib
+  - cartopy
+  - cmocean
+  - pip
