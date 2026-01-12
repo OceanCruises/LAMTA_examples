@@ -7,7 +7,8 @@ framework.
 The full documentation, including rendered notebooks and workflow explanations,
 is available on Read the Docs:
 
-\url{https://lamta-examples.readthedocs.io/en/latest/}
+[Read the LAMTA examples documentation](https://lamta-examples.readthedocs.io/en/latest/)
+
 
 ## Notes on Read the Docs
 
@@ -23,7 +24,7 @@ The example notebooks rely on a set of **reference datasets** distributed via a
 dedicated GitHub release:
 
 **LAMTA examples data (v0.1)**  
-Release tag: `data-v0.1` (https://github.com/OceanCruises/LAMTA_examples/releases/tag/data-v0.1)
+Release tag: [`data-v0.1`](https://github.com/OceanCruises/LAMTA_examples/releases/tag/data-v0.1)
 
 The data archives are **not committed to the repository**. Instead, they are:
 
