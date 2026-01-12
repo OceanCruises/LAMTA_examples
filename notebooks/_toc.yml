@@ -1,4 +1,28 @@
 format: jb-book
 root: index
+
 chapters:
-  - file: Lagrangian
+  - file: installation
+    title: Installation
+    sections:
+      - file: run
+        title: Running the notebooks
+      - file: notes
+        title: Notes on Read the Docs
+
+
+  - file: notebooks_overview
+    title: Notebooks
+    sections:
+      - file: Lagrangian
+        title: Lagrangian
+      - file: ParticleSet
+        title: ParticleSet
+      - file: Advection
+        title: Advection
+      - file: Eulerian
+        title: Eulerian
+      - file: Ocean_examples
+        title: Ocean examples
+      - file: Analytical_examples
+        title: Analytical examples

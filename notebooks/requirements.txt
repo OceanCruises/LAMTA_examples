@@ -8,6 +8,7 @@ nbsphinx
 sphinx-book-theme
 sphinx-design
 sphinx-external-toc
+sphinxcontrib-yaml
 
 pooch
 numpy
