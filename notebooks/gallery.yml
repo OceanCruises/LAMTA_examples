@@ -2,34 +2,34 @@
   website: Lagrangian.html
   notebook: Lagrangian.ipynb
   summary: Conceptual overview of the Lagrangian framework and diagnostics implemented in LAMTA.
-  # image: images/gallery/01_lagrangian.png
+  image: images/lagrangian.png
 
 - name: ParticleSet
   website: ParticleSet.html
   notebook: ParticleSet.ipynb
   summary: Initialising particle sets and configuring advection modes and parameters.
-  # image: images/gallery/02_particleset.png
+  image: images/particleset.png
 
 - name: Advection
   website: Advection.html
   notebook: Advection.ipynb
   summary: Particle advection examples using realistic and idealised velocity fields.
-  # image: images/gallery/03_advection.png
+  image: images/advection.png
 
 - name: Eulerian diagnostics
   website: Eulerian.html
   notebook: Eulerian.ipynb
   summary: Eulerian diagnostics computed from velocity fields and gridded data.
-  # image: images/gallery/04_eulerian.png
+  image: images/eulerian.png
 
 - name: Ocean examples
   website: Ocean_examples.html
   notebook: Ocean_examples.ipynb
   summary: Applied oceanographic examples using real datasets and LAMTA diagnostics.
-  # image: images/gallery/05_ocean_examples.png
+  image: images/ocean_examples.png
 
 - name: Analytical examples
   website: Analytical_examples.html
   notebook: Analytical_examples.ipynb
   summary: Analytical and idealised flow examples used to illustrate Lagrangian concepts.
-  # image: images/gallery/06_analytical.png
+  image: images/analytical.png
