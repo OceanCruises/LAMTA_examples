@@ -4,14 +4,15 @@
 :gutter: 2
 
 {% for item in data %}
-:::{card}
+
+:::{grid-item-card} {{ item.name }}
 :link: {{ item.website or item.notebook }}
-{% if item.image %}:img-top: {{ item.image }}{% endif %}
+:shadow: md
 
-**{{ item.name }}**
+{{ item.summary }}
 
-{% if item.summary %}{{ item.summary }}{% endif %}
 :::
+
 {% endfor %}
 
 ::::
