@@ -6,7 +6,7 @@ We recommend using a dedicated Conda environment to ensure all native
 dependencies (HDF5, PROJ, GEOS, etc.) are available.
 
 ```bash
-git clone https://github.com/LOCEANlloydizard/LAMTA_examples.git
+git clone https://github.com/OceanCruises/LAMTA_examples
 cd LAMTA_examples
 conda env create -f environment.yml
 conda activate lamta_examples

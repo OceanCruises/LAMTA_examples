@@ -5,6 +5,7 @@ chapters:
   - file: main_install
     title: Installation
     sections:
+      - file: dev_env
       - file: installation
       - file: run
       - file: notes
