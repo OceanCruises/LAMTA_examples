@@ -8,8 +8,7 @@ extensions = [
     "myst_nb",
     "sphinx_book_theme",
     "sphinx_external_toc",
-    "sphinx_design",
-    "sphinxcontrib.yaml",
+    "sphinx_design"
 ]
 
 # myst-nb: do not execute, render stored outputs
