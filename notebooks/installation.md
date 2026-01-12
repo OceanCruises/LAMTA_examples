@@ -5,9 +5,20 @@
 We recommend using a dedicated Conda environment to ensure all native
 dependencies (HDF5, PROJ, GEOS, etc.) are available.
 
+```{warning}
+If you only want to run the notebooks, cloning the repository is sufficient.  
+If you plan to contribute to the code or documentation, we recommend **forking the repository first** and cloning your fork instead.
+```
+
 ```bash
+# Users
 git clone https://github.com/OceanCruises/LAMTA_examples
+
+# Contributors
+#git clone https://github.com/<your-username>/LAMTA_examples
+
 cd LAMTA_examples
+
 conda env create -f environment.yml
 conda activate lamta_examples
 ```
