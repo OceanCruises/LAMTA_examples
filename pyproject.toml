@@ -6,10 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "lamta-examples"
 version = "0.1.0"
 description = "Example notebooks and reference datasets for LAMTA"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 
 dependencies = [
-  "pooch",
+    "pooch",
+    "lamta @ git+https://github.com/OceanCruises/LAMTA.git",
 ]
 
 [tool.setuptools]
