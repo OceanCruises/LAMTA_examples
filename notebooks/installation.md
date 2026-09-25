@@ -1,13 +1,9 @@
 # Installation steps
 
-## 1. Create and activate the examples environment
-
-We recommend using a dedicated Conda environment to ensure all native
-dependencies (HDF5, PROJ, GEOS, etc.) are available.
+## 1. Clone the examples repository
 
 ```{warning}
-If you only want to run the notebooks, cloning the repository is sufficient.  
-If you plan to contribute to the code or documentation, we recommend **forking the repository first** and cloning your fork instead.
+If you plan to contribute to the code or documentation, we recommend forking the repository first and cloning your fork instead.
 ```
 
 ```bash
@@ -15,57 +11,87 @@ If you plan to contribute to the code or documentation, we recommend **forking t
 git clone https://github.com/OceanCruises/LAMTA_examples
 
 # Contributors
-#git clone https://github.com/<your-username>/LAMTA_examples
+# git clone https://github.com/<your-username>/LAMTA_examples
 
 cd LAMTA_examples
+```
 
-conda env create -f environment.yml
+---
+
+## 2. Create and activate the examples environment
+
+We recommend using the dedicated Conda environment to ensure that the notebook, plotting, and native dependencies are available.
+
+```bash
+conda env create -f conda/environment.yml
 conda activate lamta_examples
 ```
 
-This installs the scientific stack required by the notebooks
-(`numpy`, `scipy`, `xarray`, `netCDF4`, `cartopy`, `matplotlib`, etc.).
+This creates the `lamta_examples` environment with Python 3.12 and the tools required to run the notebooks, including `ipykernel`, `matplotlib`, `cartopy`, and `cmocean`.
 
 ---
 
-## 2. Link your existing LAMTA installation to this environment
+## 3. Install LAMTA Examples
 
-If you are **developing LAMTA** and already have a local clone, install it
-in editable mode into the **activated** `lamta_examples` environment:
+From the root of the cloned `LAMTA_examples` repository:
 
 ```bash
-pip install -e /absolute/path/to/your/LAMTA
+python -m pip install -e .
 ```
 
-This reuses your existing working tree and ensures that any local changes
-to LAMTA are immediately visible to the notebooks.
+This installs `LAMTA_examples` in editable mode together with its Python dependencies.
 
-If LAMTA is already installed in editable mode in another environment,
-you must still repeat this step for `lamta_examples` environment
-(editable installs are environment-specific).
+LAMTA is automatically installed from the [OceanCruises/LAMTA](https://github.com/OceanCruises/LAMTA) repository, so a separate LAMTA installation is not required for users who only want to run the example notebooks.
 
 ---
 
-## 3. Verify that LAMTA is correctly available
+## 4. Verify the installation
+
+Check that LAMTA is available in the environment:
 
 ```bash
 python -c "import lamta; print('LAMTA import OK')"
 ```
 
-If this fails, ensure that:
-- the correct environment is activated,
-- LAMTA was installed into this environment.
+You can also check which LAMTA installation is being used:
+
+```bash
+python -c "import lamta; print(lamta.__file__)"
+```
 
 ---
 
-## 4. Open the notebooks
+## 5. Run the notebooks
 
-You can use **any Jupyter-compatible interface** (JupyterLab, classic Jupyter, VS Code, etc.).
+You can use any Jupyter-compatible interface such as **VS Code**, JupyterLab, or classic Jupyter Notebook.
 
-- Make sure the `lamta_examples` environment is activated
+We recommend **Visual Studio Code**.
+
+- Make sure the `lamta_examples` environment is available
 - Open a notebook from the `notebooks/` directory
-- When prompted, select the **`lamta_examples` Python kernel**
+- Select the **`lamta_examples`** Python kernel
 
-For example:
-- **VS Code**: open a notebook → select kernel in the top-right corner
-- **JupyterLab / Jupyter Notebook**: choose the kernel when opening the notebook
+In VS Code, open the notebook and use **Select Kernel** in the top-right corner to select `lamta_examples`.
+
+---
+
+## Developing LAMTA locally
+
+The installation above is recommended for users who want to run the example notebooks.
+
+If you are also developing LAMTA itself, we recommend cloning both repositories side-by-side:
+
+```text
+lamta_dev/
+├── LAMTA/
+└── LAMTA_examples/
+```
+
+After creating and activating the `lamta_examples` environment and installing `LAMTA_examples`, install the local LAMTA checkout in editable mode:
+
+```bash
+conda activate lamta_examples
+python -m pip install -e ../LAMTA
+```
+
+This replaces the LAMTA version installed from GitHub with your local editable checkout. Any changes made to the local LAMTA source code will then be immediately available when running the example notebooks.

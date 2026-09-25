@@ -9,6 +9,48 @@ is available on Read the Docs:
 
 [Read the LAMTA examples documentation](https://lamta-examples.readthedocs.io/en/latest/)
 
+---
+
+## Installation
+
+If your goal is to run the LAMTA example notebooks, clone this repository:
+
+```bash
+git clone https://github.com/OceanCruises/LAMTA_examples
+cd LAMTA_examples
+```
+
+Create and activate the dedicated Conda environment:
+
+```bash
+conda env create -f conda/environment.yml
+conda activate lamta_examples
+```
+
+Then install `LAMTA_examples`:
+
+```bash
+python -m pip install -e .
+```
+
+This installs the local `LAMTA_examples` package and automatically installs
+LAMTA from the [OceanCruises/LAMTA](https://github.com/OceanCruises/LAMTA)
+repository.
+
+To verify the installation:
+
+```bash
+python -c "import lamta; print('LAMTA import OK')"
+```
+
+Open a notebook from the `notebooks/` directory and select the
+**`lamta_examples`** Python environment as the notebook kernel.
+
+See the [installation documentation](https://lamta-examples.readthedocs.io/en/latest/installation.html)
+for additional information, including how to use a local editable LAMTA checkout
+for development.
+
+---
 
 ## Notes on Read the Docs
 
@@ -16,7 +58,9 @@ The notebooks displayed on Read the Docs are rendered using **precomputed output
 They are **not executed online**.
 
 To reproduce, modify, or extend the analyses, the notebooks must be run locally
-in a suitable Python environment with LAMTA installed.
+using the `lamta_examples` environment.
+
+---
 
 ## Data access model
 
@@ -39,6 +83,8 @@ or when building the documentation.
 Data access is handled programmatically via the helper function
 `ensure_dataset()`.
 
+---
+
 ## Contents of the data release
 
 The data release provides reference datasets defining the expected file names,
@@ -59,9 +105,12 @@ variable conventions, and directory structure used in the notebooks:
 - **SWOT**
   - SWOT L3 LR SSH Expert (June 2023)
 
+---
+
 ## Intended use
 
 These datasets and notebooks are intended for:
+
 - demonstration
 - testing
 - documentation
